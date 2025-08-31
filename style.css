@@ -8,6 +8,7 @@
     src: url(../../Downloads/RobotoItalic.ttf);
 }
 
+/*General selectors*/
 
 body {
     font-family: Roboto, sans-serif;
@@ -17,6 +18,16 @@ body {
     margin: 0;
     background: #1F2937;
     color: white;
+}
+
+
+strong {
+    font-family: Roboto;
+    font-weight: 900;
+    padding: 10px 0;
+    display: flex;
+    justify-self: end;
+    font-size: 18px;
 }
 
 button {
@@ -40,15 +51,65 @@ a {
     color: #d3d5d9;
 }
 
+/*Hero*/
+
+.main-header {
+    margin: 0 15%;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .logo {
     font-size: 24px;
     font-weight: bold;
+}
+
+.hLinks {
+    font-size: 18px;
+    margin-left: auto;
+    gap: 16px
 }
 
 .hero {
     display: flex;
     flex-direction: column;
 }
+
+.hero-content {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+    gap: 100px;
+}
+
+.contOne{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 40px 0;
+    gap: 8px;
+}
+
+.hCont {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.conTwo {
+    display: flex;
+    background: #8a8a8a;
+    align-self: center;
+    align-items: center;
+    justify-content: center; 
+    padding: 20px;
+    width: 400px;
+    height: 150px;  
+    flex-shrink: 0; 
+}
+
+/*Information*/
 
 .info {
     display: flex;
@@ -92,51 +153,7 @@ a {
     border-radius: 20px;
 }
 
-.hero-content {
-    display: flex;
-    justify-content: center;
-    margin: 100px 0;
-    gap: 100px;
-}
-
-.hCont {
-    font-size: 48px;
-    font-weight: 900;
-}
-
-.main-header {
-    margin: 0 15%;
-    padding: 15px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.conTwo {
-    display: flex;
-    background: #8a8a8a;
-    align-self: center;
-    align-items: center;
-    justify-content: center; 
-    padding: 20px;
-    width: 400px;
-    height: 150px;  
-    flex-shrink: 0; 
-}
-
-.hLinks {
-    font-size: 18px;
-    margin-left: auto;
-    gap: 16px
-}
-
-.contOne{
-    display: flex;
-    flex-direction: column;
-    width: 400px;
-    margin: 40px 0;
-    gap: 8px;
-}
+/*Quote*/
 
 .inspiring-quote{
     display: flex;
@@ -146,6 +163,7 @@ a {
 }
 
 .inspiring-quote div {
+    flex-direction: column;
     font-family: Roboto-Italic;
     font-weight: lighter;
     font-size: 36px;
@@ -154,15 +172,7 @@ a {
     padding: 100px 0;
 }
 
-
-strong {
-    font-family: Roboto;
-    font-weight: 900;
-    padding: 10px 0;
-    display: flex;
-    justify-self: end;
-    font-size: 18px;
-}
+/*Action*/
 
 .action-container {
     background: white;
